@@ -1,4 +1,10 @@
-## Hi there 👋
+# Noelia Melina Qualindi
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Montserrat&weight=300&size=30&pause=1200&color=FF1FAE&center=true&vCenter=true&width=720&lines=Software+%26+AI+Engineer)](https://git.io/typing-svg)
+
+<p align="center">
+  <img src="./banner.svg" alt="Software & AI Engineer — magenta light banner" />
+</p>
+
 
 <!--
 **noequalindi/noequalindi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
