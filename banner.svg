@@ -1,3 +1,4 @@
+<!-- banner_typewriter.svg (sin cursor) -->
 <svg width="960" height="220" viewBox="0 0 960 220" xmlns="http://www.w3.org/2000/svg">
   <style>
     .title {
@@ -16,6 +17,7 @@
   </style>
 
   <defs>
+    <!-- Gradiente magenta/rosa -->
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FF0099"/>
       <stop offset="50%" stop-color="#FF26B3"/>
@@ -39,8 +41,10 @@
       </feMerge>
     </filter>
 
+    <!-- Máscara typewriter (escribe, PAUSA y borra) -->
     <mask id="reveal" maskContentUnits="objectBoundingBox">
       <rect x="0" y="0" width="0" height="1" fill="#fff">
+        <!-- 22 pasos de escritura → 2 pasos de pausa al final → 22 pasos de borrado -->
         <animate attributeName="width"
                  dur="7s"
                  repeatCount="indefinite"
@@ -55,23 +59,12 @@
   <!-- Fondo -->
   <rect x="0" y="0" width="960" height="220" rx="22" fill="#0d0f14" stroke="#1f2330"/>
 
+  <!-- Texto + máscara (sin cursor) -->
   <g transform="translate(60,0)" filter="url(#glow)">
     <g mask="url(#reveal)">
       <text x="0" y="112" class="title" text-anchor="start" fill="url(#grad)">Software &amp; AI Engineer</text>
       <text x="0" y="112" class="title" text-anchor="start" fill="url(#shine)" opacity=".45">Software &amp; AI Engineer</text>
     </g>
-
-    <rect id="cursor" x="0" y="82" width="2.4" height="40" fill="#FF1FAE">
-      <animate attributeName="x"
-               dur="9s"
-               repeatCount="indefinite"
-               calcMode="discrete"
-               values="0;22;44;66;88;110;132;154;176;198;220;242;264;286;308;330;352;374;396;418;440;462;484;
-                       484;484;
-                       462;440;418;396;374;352;330;308;286;264;242;220;198;176;154;132;110;88;66;44;22;0"/>
-      <animate attributeName="opacity" values="1;0.15;1" dur="0.9s" repeatCount="indefinite"/>
-    </rect>
-
     <text x="0" y="164" class="subtitle">LLMs - RAG - Computer Vision - MLOps</text>
   </g>
 </svg>
