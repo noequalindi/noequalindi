@@ -2,7 +2,7 @@
   <style>
     .title {
       font-family: "Fira Code","JetBrains Mono","SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
-      font-weight: 300;
+      font-weight: 300; /* light-ish */
       font-size: 48px;
       letter-spacing: 0.4px;
     }
@@ -22,6 +22,7 @@
       <stop offset="100%" stop-color="#FF1FAE"/>
     </linearGradient>
 
+    <!-- Brillo suave -->
     <linearGradient id="shine" x1="-20%" y1="0%" x2="120%" y2="0%">
       <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
       <stop offset="50%" stop-color="rgba(255,255,255,0.7)"/>
@@ -41,15 +42,17 @@
     <mask id="reveal" maskContentUnits="objectBoundingBox">
       <rect x="0" y="0" width="0" height="1" fill="#fff">
         <animate attributeName="width"
-                 dur="5.5s"
+                 dur="7s"
                  repeatCount="indefinite"
                  calcMode="discrete"
                  values="0;0.0455;0.0909;0.1364;0.1818;0.2273;0.2727;0.3182;0.3636;0.4091;0.4545;0.5;0.5455;0.5909;0.6364;0.6818;0.7273;0.7727;0.8182;0.8636;0.9091;0.9545;1;
+                         1;1;
                          0.9545;0.9091;0.8636;0.8182;0.7727;0.7273;0.6818;0.6364;0.5909;0.5455;0.5;0.4545;0.4091;0.3636;0.3182;0.2727;0.2273;0.1818;0.1364;0.0909;0.0455;0"/>
       </rect>
     </mask>
   </defs>
 
+  <!-- Fondo -->
   <rect x="0" y="0" width="960" height="220" rx="22" fill="#0d0f14" stroke="#1f2330"/>
 
   <g transform="translate(60,0)" filter="url(#glow)">
@@ -58,17 +61,17 @@
       <text x="0" y="112" class="title" text-anchor="start" fill="url(#shine)" opacity=".45">Software &amp; AI Engineer</text>
     </g>
 
-    <path id="cursorPath" d="M 0 0 H 484" fill="none" />
     <rect id="cursor" x="0" y="82" width="2.4" height="40" fill="#FF1FAE">
-      <animateMotion dur="5.5s" repeatCount="indefinite" calcMode="discrete"
-                     keyPoints="0;0.0455;0.0909;0.1364;0.1818;0.2273;0.2727;0.3182;0.3636;0.4091;0.4545;0.5;0.5455;0.5909;0.6364;0.6818;0.7273;0.7727;0.8182;0.8636;0.9091;0.9545;1;
-                                0.9545;0.9091;0.8636;0.8182;0.7727;0.7273;0.6818;0.6364;0.5909;0.5455;0.5;0.4545;0.4091;0.3636;0.3182;0.2727;0.2273;0.1818;0.1364;0.0909;0.0455;0"
-                     keyTimes="0;0.0227;0.0455;0.0682;0.0909;0.1136;0.1364;0.1591;0.1818;0.2045;0.2273;0.25;0.2727;0.2955;0.3182;0.3409;0.3636;0.3864;0.4091;0.4318;0.4545;0.4773;0.5;
-                               0.5227;0.5455;0.5682;0.5909;0.6136;0.6364;0.6591;0.6818;0.7045;0.7273;0.75;0.7727;0.7955;0.8182;0.8409;0.8636;0.8864;0.9091;0.9318;0.9545;0.9773;1">
-        <mpath xlink:href="#cursorPath"/>
-      </animateMotion>
+      <animate attributeName="x"
+               dur="9s"
+               repeatCount="indefinite"
+               calcMode="discrete"
+               values="0;22;44;66;88;110;132;154;176;198;220;242;264;286;308;330;352;374;396;418;440;462;484;
+                       484;484;
+                       462;440;418;396;374;352;330;308;286;264;242;220;198;176;154;132;110;88;66;44;22;0"/>
       <animate attributeName="opacity" values="1;0.15;1" dur="0.9s" repeatCount="indefinite"/>
     </rect>
-    <text x="0" y="164" class="subtitle">applied ML · RAG · vision · MLOps</text>
+
+    <text x="0" y="164" class="subtitle">LLMs - RAG - Computer Vision - MLOps</text>
   </g>
 </svg>
