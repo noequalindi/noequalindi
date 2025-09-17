@@ -1,6 +1,14 @@
-<!-- banner_typewriter.svg (sin cursor) -->
+<!-- banner_typewriter.svg (con nombre arriba, sin cursor) -->
 <svg width="960" height="220" viewBox="0 0 960 220" xmlns="http://www.w3.org/2000/svg">
   <style>
+    .name {
+      font-family: "Montserrat","Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      font-weight: 300; /* Light */
+      font-size: 32px;
+      letter-spacing: 0.2px;
+      fill: #e6e9f2;
+      opacity: 0.95;
+    }
     .title {
       font-family: "Fira Code","JetBrains Mono","SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
       font-weight: 300; /* light-ish */
@@ -59,13 +67,18 @@
   <!-- Fondo -->
   <rect x="0" y="0" width="960" height="220" rx="22" fill="#0d0f14" stroke="#1f2330"/>
 
-  <!-- Texto + máscara (sin cursor) -->
+  <!-- Contenido -->
   <g transform="translate(60,0)" filter="url(#glow)">
+    <!-- Tu nombre (estático, bien alineado al margen izquierdo del contenido) -->
+    <text x="0" y="56" class="name" text-anchor="start">Noelia Melina Qualindi</text>
+
+    <!-- Título con efecto typewriter -->
     <g mask="url(#reveal)">
       <text x="0" y="112" class="title" text-anchor="start" fill="url(#grad)">Software &amp; AI Engineer</text>
       <text x="0" y="112" class="title" text-anchor="start" fill="url(#shine)" opacity=".45">Software &amp; AI Engineer</text>
     </g>
-    <text x="0" y="164" class="subtitle">LLMs - RAG - Computer Vision - MLOps - Full Stack Developer </text>
+
+    <!-- Subtítulo -->
+    <text x="0" y="164" class="subtitle">LLMs - RAG - Computer Vision - MLOps</text>
   </g>
 </svg>
-
