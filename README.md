@@ -1,10 +1,10 @@
 <!-- Profile README for GitHub: noequalindi/noequalindi -->
 
+# Noelia Melina Qualindi
+
 <p align="center">
   <img src="./banner.svg" alt="Software & AI Engineer — magenta light code font typewriter" />
 </p>
-
-# Noelia Melina Qualindi
 
 ES | [EN](#english-version)
 
@@ -106,28 +106,6 @@ Atleta — **Patinaje Artístico** (selección argentina).
   <img src="https://github-profile-trophy.vercel.app/?username=noequalindi&theme=flat&no-frame=true&column=6" alt="GitHub Trophies"/>
 </p>
 
-## Snake de contribuciones (opcional)
+<!-- Insertá la animación en el README cuando corra el workflow -->
+![Snake animation](https://raw.githubusercontent.com/noequalindi/noequalindi/output/snake.svg)
 
-```yaml
-# .github/workflows/snake.yml
-name: Generate snake
-on:
-  schedule:
-    - cron: "0 0 * * *"  # todos los días a medianoche UTC
-  workflow_dispatch:
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: noequalindi
-          outputs: |
-            dist/snake.svg
-      - name: Push snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
