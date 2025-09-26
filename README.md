@@ -77,7 +77,6 @@ Athlete — **Artistic Roller Skating** (Argentina national team).
 - **Survival models** for risk and event series.
 
 ### Contact
-- Portfolio: https://www.noeliaqualindi.com  
 - Linktree: https://linktr.ee/noequalindi  
 - Email: noelia.qualindi@gmail.com
 
